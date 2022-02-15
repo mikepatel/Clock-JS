@@ -15,10 +15,10 @@ function updateTime(){
     let seconds = date.getSeconds();
 
     // prepend time values with "0" if necessary
-    hours = preprocess_text(hours)
-    minutes = preprocess_text(minutes);
-    seconds = preprocess_text(seconds);
-    
+    hours = format_time(hours)
+    minutes = format_time(minutes);
+    seconds = format_time(seconds);
+
     // create a string with time values
     time = hours + ":" + minutes + ":" + seconds;
 
@@ -35,7 +35,7 @@ function updateTime(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // prepend time values with "0" if necessary
-function preprocess_text(value){
+function format_time(value){
     if(value < 10){
         value = "0" + value;
     }

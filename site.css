@@ -8,8 +8,16 @@ body {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* CLOCK */
 #clock {
-    font-size: 200px;
-    color: white;
+    color: #20C073;  /* mint */
+    font-family: Impact;
+    font-size: 250px;
+    font-weight: 900;
+
+    /* center */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 

@@ -20,7 +20,7 @@ function updateTime(){
     seconds = format_time(seconds);
 
     // create a string with time values
-    time = hours + ":" + minutes + ":" + seconds;
+    let time = hours + ":" + minutes + ":" + seconds;
 
     // get reference to 'clock' element
     let clock = document.getElementById("clock");

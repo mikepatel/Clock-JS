@@ -10,9 +10,9 @@ window.addEventListener("DOMContentLoaded", function(){
 function updateTime(){
     // get current time
     let date = new Date();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+    let hours = date.getUTCHours();
+    let minutes = date.getUTCMinutes();
+    let seconds = date.getUTCSeconds();
 
     // prepend time values with "0" if necessary
     hours = format_time(hours)
